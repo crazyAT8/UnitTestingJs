@@ -1,0 +1,22 @@
+youtube video titled "Introduction to testing "
+
+- to be able to see that all the lines of code got tested and all the functions ran accordingly
+    go to the package.json file > "test" section > write "jest --coverage" (which is a jest property)
+        now its making sure that everything gets checked
+            by adding the "--coverage" to the "test": "jest" section
+            it automatically adds a coverage folder
+                and lookup unitTestingJS > coverage > Icov-report > index.html and then go to liveServer
+                    this will give you a webpage for the stats of your code coverage
+
+- add a unnessicary function to the js file sum called helper
+    - run a npm test in your terminal
+        -notice that the coverage table is different bc the function isn't being used
+            -click on the sum.js in the browser and see all the lines of code that aren't being used (they're in red)
+                -this is a big help for taking note if we are testing everything we want to test
+
+- we do all of this to make sure that our code does what we want it to do
+
+- this is all called unit testing
+    unit testing is when you test the smallest unit of your code
+        in this case its just a single function
+            we are breaking our code down into really small components
